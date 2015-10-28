@@ -1,4 +1,4 @@
-/*! multiparty.js build:0.0.0, development. Copyright(c) 2014 Kensaku Komatsu <kensaku.komatsu@gmail.com> */
+/*! multiparty.js build:1.0.0, development. Copyright(c) 2014 Kensaku Komatsu <kensaku.komatsu@gmail.com> */
 (function(exports){
 /*!
  * EventEmitter2
@@ -1687,7 +1687,7 @@ new function() {
           }
         }
         if(isDisconnected){
-          self.fire_('dc_close', this.peer);
+          self.fire_('dc_close', peer_id);
           // check if user has any other open connections
           if(self.peers[peer_id] &&
             (self.peers[peer_id].call === undefined || !self.peers[peer_id].call.open) &&
